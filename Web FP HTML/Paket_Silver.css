@@ -1,0 +1,287 @@
+/* mengimport font dari google font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap");
+/* mengatur setiap body */
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Bagian dibawah ini berfungi mengatur style untuk bagian homepage yang terdiri dari navbar dan isi content nya */
+.homepage {
+  background-image: linear-gradient(
+      to top,
+      rgb(0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0)
+    ),
+    url(IMG/hero-1.png);
+  width: 100%;
+  height: 125vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  padding: 20px;
+  cursor: pointer;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: poppins;
+  font-weight: 600;
+}
+
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #b10a0a;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+.login-btn {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  border: 2px solid #ffffff;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-btn:hover {
+  background: #b10a0a;
+  height: 100%;
+  border: none;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s;
+}
+.texthome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.texthome h6 {
+  font-size: 20px;
+  font-weight: 200;
+}
+.texthome h1 {
+  font-size: 90px;
+  font-weight: 700;
+  color: #c3c3c3;
+}
+.texthome h2 {
+  font-size: 50px;
+  font-weight: 400;
+}
+.textsisi {
+  padding-top: 800px;
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.textsisi h3 {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 700;
+}
+.textsisi ul li {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 200;
+}
+.textsisi li {
+  list-style-type: none;
+}
+.textsisi2 ul li {
+  text-align: right;
+}
+.textsisi2 h3 {
+  text-align: right;
+}
+
+/* Dibawah ini berfungsi mengatur style setiap button */
+.btn:hover,
+.btn:focus,
+btn:active {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* Bagian dibawah ini berfungsi untuk mengatur style dari section Sponsor */
+.sponsor {
+  background-color: black;
+  width: 100%;
+  height: 23vh;
+  background-position: center;
+  background-size: cover;
+}
+.iklan {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+/* Bagian dibawah untuk mengatur content dari section Sponsor */
+.card-content {
+  padding: 0px;
+}
+.card-content .btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #c3c3c3;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 16px;
+  color: black;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+
+/* Bagian dibawah ini berfungsi untuk mengatur style dari section footer */
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+ul {
+  list-style: none;
+}
+.footer {
+  background-color: #222222;
+  padding: 70px 15px;
+}
+.footer-menu {
+  display: flex;
+  justify-content: space-around;
+}
+.footer-col {
+  width: 35%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
